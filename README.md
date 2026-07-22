@@ -3,10 +3,6 @@
 
 ## Week 1 — Completed
 
-DE Journey
-
-Week 1 — Completed
-
 - Python basics: variables, loops, conditions, functions
 - Lists and dictionaries
 - SQLite database connection and querying
