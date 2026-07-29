@@ -14,7 +14,7 @@ print(type(response.json()))
 print(response.json())
 
 
-
-for i in response.json():
+if response.status_code == 200:
+    for i in response.json():
 
     print(f"Name:{i['name']} | Email:{i['email']}")
