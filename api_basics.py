@@ -17,4 +17,7 @@ print(response.json())
 if response.status_code == 200:
     for i in response.json():
 
-    print(f"Name:{i['name']} | Email:{i['email']}")
+        print(f"Name:{i['name']} | Email:{i['email']}")
+
+else:
+    print(f"API failed with status code:{response.status_code}")
