@@ -1,0 +1,279 @@
+2026-09-28 15:48:21,620 - INFO  - Pipeline started
+2026-09-28 16:00:03,313 - INFO  - Pipeline started
+2026-09-28 16:00:03,318 - ERROR  - Connection failed
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000022B5F74AFF0>: Failed to resolve 'wttr.in' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Mumbai?format=j1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022B5F74AFF0>: Failed to resolve 'wttr.in' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\DE_Journey\Project1.py", line 14, in <module>
+    response = requests.get('https://wttr.in/Mumbai?format=j1')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Mumbai?format=j1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022B5F74AFF0>: Failed to resolve 'wttr.in' ([Errno 11001] getaddrinfo failed)"))
+2026-09-28 16:12:28,028 - INFO  - Pipeline started
+2026-09-28 16:19:35,136 - INFO  - Pipeline started
+2026-09-28 16:19:36,405 - INFO  - Connection Sucessfull
+2026-09-28 16:20:51,255 - INFO  - Pipeline started
+2026-09-28 16:20:52,548 - INFO  - Connection Sucessfull
+2026-09-28 16:21:15,911 - INFO  - Pipeline started
+2026-09-28 16:21:17,118 - INFO  - Connection Sucessfull
+2026-09-28 16:23:02,935 - INFO  - Pipeline started
+2026-09-28 16:23:10,177 - ERROR  - Connection failed
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001BEAB71E8D0>: Failed to resolve 'wtin' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wtin', port=443): Max retries exceeded with url: /Mui?format=j1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001BEAB71E8D0>: Failed to resolve 'wtin' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\DE_Journey\Project1.py", line 14, in <module>
+    response = requests.get('https://wtin/Mui?format=j1',timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='wtin', port=443): Max retries exceeded with url: /Mui?format=j1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001BEAB71E8D0>: Failed to resolve 'wtin' ([Errno 11001] getaddrinfo failed)"))
+2026-09-28 16:25:04,158 - INFO  - Pipeline started
+2026-09-28 16:25:05,395 - INFO  - Request Sucessfull
+2026-09-28 16:52:34,317 - INFO  - Pipeline started
+2026-09-28 16:52:35,516 - INFO  - Request Successful
+2026-09-28 16:55:59,493 - INFO  - Pipeline started
+2026-09-28 16:56:00,656 - INFO  - Request Successful
+2026-09-29 08:28:16,290 - INFO  - COnnecion to DB successful
+2026-09-29 08:42:22,885 - INFO  - Pipeline started
+2026-09-29 08:42:23,917 - INFO  - Request Successful
+2026-09-29 08:42:23,920 - INFO  - Connecion to DB successful
+2026-09-29 08:43:10,030 - INFO  - Pipeline started
+2026-09-29 08:43:11,139 - INFO  - Request Successful
+2026-09-29 08:43:11,140 - INFO  - Connecion to DB successful
+2026-09-29 08:43:14,500 - INFO  - Pipeline started
+2026-09-29 08:43:15,634 - INFO  - Request Successful
+2026-09-29 08:43:15,635 - INFO  - Connecion to DB successful
+2026-09-29 08:43:19,386 - INFO  - Pipeline started
+2026-09-29 08:43:20,370 - INFO  - Request Successful
+2026-09-29 08:43:20,372 - INFO  - Connecion to DB successful
+2026-09-29 08:44:50,451 - INFO  - Pipeline started
+2026-09-29 08:44:51,632 - INFO  - Request Successful
+2026-09-29 08:44:51,643 - INFO  - Connecion to DB successful
+2026-09-29 08:49:34,624 - INFO  - Connecion to DB successful
+2026-09-29 08:53:16,172 - INFO  - Connecion to DB successful
+2026-09-29 08:56:12,986 - INFO  - Pipeline started
+2026-09-29 08:56:14,047 - INFO  - Request Successful
+2026-09-29 08:56:14,062 - INFO  - Connecion to DB successful
+2026-09-29 09:12:59,717 - INFO  - Pipeline started
+2026-09-29 09:13:00,883 - INFO  - Request Successful
+2026-09-29 09:13:00,897 - INFO  - Connecion to DB successful
+2026-09-29 09:36:15,806 - INFO  - Pipeline started
+2026-09-29 09:36:17,120 - INFO  - Request Successful
+2026-09-29 16:31:19,000 - INFO  - Pipeline started
+2026-09-29 16:31:20,086 - INFO  - Request Successful
+2026-09-29 16:31:20,087 - INFO  - Pipeline started
+2026-09-29 16:31:21,117 - INFO  - Request Successful
+2026-09-29 16:34:34,352 - INFO  - Pipeline started
+2026-09-29 16:34:35,509 - INFO  - Request Successful
+2026-09-29 16:34:35,540 - INFO  - Connecion to DB successful
+2026-09-29 16:40:18,651 - INFO  - Pipeline started
+2026-09-29 16:40:19,892 - INFO  - Request Successful
+2026-09-29 16:40:19,899 - INFO  - Connecion to DB successful
+2026-09-29 16:45:44,111 - INFO  - Pipeline started
+2026-09-29 16:45:45,276 - INFO  - Request Successful
+2026-09-29 16:45:45,279 - INFO  - Connecion to DB successful
+2026-09-29 16:54:32,683 - INFO  - Pipeline started
+2026-09-29 16:54:33,820 - INFO  - Request Successful
+2026-09-29 16:54:33,823 - INFO  - Connecion to DB successful
+2026-09-29 16:55:01,095 - INFO  - Pipeline started
+2026-09-29 16:55:01,103 - ERROR  - Connection failed
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000014A876C5BB0>: Failed to resolve 'wttr.in' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Mumbai?format=j1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014A876C5BB0>: Failed to resolve 'wttr.in' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\DE_Journey\Project1.py", line 16, in fetch_weather
+    response = requests.get('https://wttr.in/Mumbai?format=j1',timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Mumbai?format=j1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014A876C5BB0>: Failed to resolve 'wttr.in' ([Errno 11001] getaddrinfo failed)"))
+2026-09-29 16:59:15,156 - INFO  - Pipeline started
+2026-09-29 16:59:16,296 - INFO  - Request Successful
+2026-09-29 16:59:16,299 - INFO  - Connecion to DB successful
+2026-09-29 16:59:16,303 - INFO  - Pipeline Completed Successfully
+2026-09-29 19:06:39,920 - INFO  - Pipeline started
+2026-09-29 19:06:41,013 - INFO  - Request Successful
+2026-09-29 19:06:41,028 - INFO  - Connecion to DB successful
+2026-09-29 19:06:41,036 - INFO  - Pipeline Completed Successfully
+2026-09-29 19:10:44,870 - INFO  - Pipeline started
+2026-09-29 19:10:46,004 - INFO  - Request Successful
+2026-09-29 19:10:46,007 - INFO  - Connecion to DB successful
+2026-09-29 19:10:46,027 - INFO  - 
+   FeelsLikeC  temp_C weatherDesc  humidity  windspeedKmph                  fetched_at
+0          32      28      Clear         77             16  2026-09-29 19:10:46.005457
+1          32      28      Clear         77             16  2026-09-29 19:06:41.017099
+2          32      28       Sunny        77             19  2026-09-29 16:59:16.297222
+3          32      28       Sunny        76             19  2026-09-29 16:54:33.821617
+4          32      28       Sunny        76             19  2026-09-29 16:45:45.277237
+2026-09-29 19:10:46,032 - INFO  - Pipeline Completed Successfully
