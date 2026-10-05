@@ -22,6 +22,8 @@ cursor.execute("""
     )
 """)
 conn.commit()
+cursor.execute("DELETE FROM employees")
+conn.commit()
 
 cursor.execute(""" 
     INSERT INTO employees(name,dept,salary,joining_date)
