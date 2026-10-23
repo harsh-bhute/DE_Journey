@@ -1,0 +1,11 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY etl_pipeline.py .
+
+
+CMD ["python","etl_pipeline.py"]

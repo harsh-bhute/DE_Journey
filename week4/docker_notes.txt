@@ -1,0 +1,11 @@
+FROM  is the base layer for the image building ,meaning it will be based on Python 
+
+WORKDIR defines working directory that is /app, it is created if not present 
+
+COPY , it copies the requirements.txt file from local to the /app
+THEN RUN this to install all the dependecies in requirements.txt file
+
+after this we copy the etl_pipeline.py file to /app 
+Also copy the .env to get the environment variables as well 
+
+THEN using CMD we run the container that is python etl_pipeline.py 
