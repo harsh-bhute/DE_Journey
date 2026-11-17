@@ -5,7 +5,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY etl_pipeline.py .
+COPY week4/pg_etl.py .
 
 
-CMD ["python","etl_pipeline.py"]
+CMD ["python","pg_etl.py"]
